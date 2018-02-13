@@ -11,13 +11,14 @@ text-align: left;
 
 .crop {
  text-align: center;
- height: 300px;
- width: 400px;
+ height: 350px;
+ width: 800px;
  overflow: hidden;
 }
 .crop img {
+ text-align: center
  height: auto;
- width: 400px;
+ width: 800px;
 }
 
 nav li {
