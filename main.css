@@ -1,0 +1,44 @@
+body {
+        background-color: black;
+        text-align: center;
+}
+
+footer {
+text-align: left;
+}
+
+
+
+.crop {
+ text-align: center;
+ height: 350px;
+ width: 800px;
+ overflow: hidden;
+}
+.crop img {
+ text-align: center
+ height: auto;
+ width: 800px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+nav li a:hover {
+        background-color: #111;
+  color: white;
+}
+
+nav a.active {
+  background-color: darkgrey;
+  color: black;
+}
