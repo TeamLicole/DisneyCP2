@@ -3,7 +3,7 @@ body {
 }
 
 #page-wrap {
-     width: 800px;
+     width: 400px;
      margin: 0 auto;
      text-align: center;
 }
@@ -11,10 +11,6 @@ body {
 
 footer {
 text-align: left;
-}
-
-h1{
-  text-align:center;
 }
 
 .crop {
