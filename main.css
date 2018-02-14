@@ -42,3 +42,11 @@ nav a.active {
   background-color: darkgrey;
   color: black;
 }
+
+.mkResults li {
+  color: white;
+}
+
+form label {
+  color: white;
+}

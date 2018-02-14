@@ -1,35 +1,32 @@
 $(document).ready(function() {
-  var mkSubmitButton = $("#mkSubmit");
-  console.log(mkSubmitButton);
-
   var createValidURLValue = function(value) {
     value = value.trim();
-    value = value.toLowercase();
-    for (var i = 0; i < value.length; i++) {
-      if (value[i] == ' ' || value[i] == '-') {
-        value[i] = '_';
-      }
-    }
+    value = value.toLowerCase();
+
+    value = value.split(' ').join('_');
+
     return value;
   }
 
   var fixResultFormat = function(result) {
     for (var i = 0; i < result.length; i++) {
-      if (result[i] == '_') {
-        result[i] = ' ';
+      if (result[i] == "_") {
+        result[i] = " ";
       }
     }
     return result;
   }
 
+  var mkSubmitButton = $("#mkSubmit");
+  console.log(mkSubmitButton);
   $("#mkSubmit").click(function(e) {
     e.preventDefault();
     var value = $("#mkInput").val();
     value = createValidURLValue(value);
-    console.log(value);
     var myurl= "http://touringplans.com/magic-kingdom/attractions/" + value + ".json";
   	$.ajax({
   	    url : myurl,
+        type: 'REST',
   	    dataType : "json",
   	    success : function(json) {
   		      console.log(json);
