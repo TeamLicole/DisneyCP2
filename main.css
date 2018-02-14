@@ -6,9 +6,12 @@ footer {
 text-align: left;
 }
 
-
+h1{
+  text-align:center;
+}
 
 .crop {
+ text-align: center;
  height: 300px;
  width: 400px;
  overflow: hidden;
@@ -19,11 +22,8 @@ text-align: left;
  width: 400px;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 nav li {
   float: left;
