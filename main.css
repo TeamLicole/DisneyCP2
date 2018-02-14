@@ -1,17 +1,24 @@
 body {
-        background-color: black;
         text-align: center;
+}
+
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+     text-align: center;
+}
+
+h1 {
+text-align:center;
 }
 
 footer {
 text-align: left;
 }
 
-
-
 .crop {
  text-align: center;
- height: 350px;
+ height: 600px;
  width: 800px;
  overflow: hidden;
 }
@@ -20,6 +27,9 @@ text-align: left;
  height: auto;
  width: 800px;
 }
+
+
+
 
 nav li {
   float: left;
@@ -39,7 +49,7 @@ nav li a:hover {
 }
 
 nav a.active {
-  background-color: darkgrey;
+  background-color: white;
   color: black;
 }
 
@@ -49,4 +59,8 @@ nav a.active {
 
 form label {
   color: white;
+}
+
+p {
+  color:white;
 }
