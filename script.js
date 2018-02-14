@@ -3,14 +3,14 @@ $(document).ready(function() {
     value = value.trim();
     value = value.toLowerCase();
 
-    value = value.split(' ').join('_');
+    value = value.split(' ').join('-');
 
     return value;
   }
 
   var fixResultFormat = function(result) {
     for (var i = 0; i < result.length; i++) {
-      if (result[i] == "-") {
+      if (result[i] == "_") {
         result[i] = " ";
       }
     }
