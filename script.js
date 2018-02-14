@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   var fixResultFormat = function(result) {
     for (var i = 0; i < result.length; i++) {
-      if (result[i] == "_") {
+      if (result[i] == "-") {
         result[i] = " ";
       }
     }
